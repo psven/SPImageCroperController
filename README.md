@@ -2,24 +2,20 @@
 A simple controller that allows users to crop image using an arbitrary quadrilateral, and then return the croped image in a square rect.
 
 ## Features
----
 - Crop images by dragging the four angles of the selection box
 - Supports arbitrary quadrilateral
-- Adjust the croped image to a square by using `CIPerspectiveCorrection`
+- Adjust the croped image to a square by using [CIPerspectiveCorrection](CIPerspectiveCorrection
+)
 
 ## System Requirement
 iOS 8.0 or above
 
 ## Installation
----
 ### Manual Installation
 Simply copy the `SPImageCroperController` directory to your Xcode project.
 
-**Import Files**
-`#Import "SPImageCroperController"`
 
 ## Example
----
 Using `SPImageCroperController` is very straightforward. Simply create a new instance passing the `UIImage` object you wish to crop, and then present it modally on the screen.
 
 While `SPImageCroperController` prefers to be presented modally, it can also be pushed to a `UINavigationController` stack.
@@ -27,6 +23,7 @@ While `SPImageCroperController` prefers to be presented modally, it can also be 
 For a complete working example, check out the demo included in this repo.
 
 **Basic Implementation**
+
 You can implement `SPImageCroperController` just with one line code by using block:
 ```Objective-C
 SPImageCroperController *vc = [[SPImageCroperController alloc] initWithOriginalImage:image completion:^(SPImageCroperController *viewController, UIImage *cropedImage) {
@@ -59,4 +56,4 @@ vc.delegate = self;
 ```
 
 ## License
-`SPImageCroperController` is licensed under the MIT License, please see the LICENSE file. analytics
+`SPImageCroperController` is licensed under the MIT License, please see the [LICENSE](https://github.com/light3n/SPImageCroperController/blob/master/LICENSE) file. 
