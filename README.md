@@ -2,8 +2,9 @@
 A simple controller that allows users to crop image using an arbitrary quadrilateral,  and then preview the tiled effect of the croped image in real time, and return the croped image in a square rect.
 
 ## Screenshot
-![IMAGE](resources/A97FA1130ADDCFCBA482F3BFA255F600.jpg =750x1334)
-![IMAGE](resources/E06E825E0A574A76455F429AEF433BE9.jpg =750x1334)
+![IMAGE](https://github.com/light3n/SPImageCroperController/blob/master/screenshot/screenshot_1.jpg)
+
+![IMAGE](https://github.com/light3n/SPImageCroperController/blob/master/screenshot/screenshot_2.jpg)
 
 
 ## Features
