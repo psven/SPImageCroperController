@@ -39,7 +39,7 @@ static CGFloat toolBarViewHeight = 40.0f;
 
 - (void)setOriginalImage:(UIImage *)originalImage {
     _originalImage = originalImage;
-    [self buildoriginalImageViewWithImage:originalImage];
+    [self buildOriginalImageViewWithImage:originalImage];
 }
 
 - (instancetype)initWithOriginalImage:(UIImage *)originalImage
@@ -159,7 +159,7 @@ static CGFloat toolBarViewHeight = 40.0f;
     self.cancelBtn.frame = CGRectMake(0, 0, 80, CGRectGetHeight(self.toolbarView.frame));
     self.confirmBtn.frame = CGRectMake(CGRectGetWidth(self.toolbarView.frame)-80, 0, 80, CGRectGetHeight(self.toolbarView.frame));
     
-    [self buildoriginalImageViewWithImage:self.originalImage];
+    [self buildOriginalImageViewWithImage:self.originalImage];
 }
 
 - (void)buttonClickedHandler:(UIButton *)button {
@@ -208,7 +208,7 @@ static CGFloat toolBarViewHeight = 40.0f;
 
 // draw the image to specified size
 // so the SPPathView's control points can matching the image's area correctly
-- (void)buildoriginalImageViewWithImage:(UIImage *)image {
+- (void)buildOriginalImageViewWithImage:(UIImage *)image {
     UIGraphicsBeginImageContext(self.originalImageView.frame.size);
     [image drawInRect:CGRectMake(0, 0, CGRectGetWidth(self.originalImageView.frame), CGRectGetHeight(self.originalImageView.frame))];
     UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
