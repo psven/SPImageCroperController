@@ -68,9 +68,9 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     SPImageCroperController *vc = [[SPImageCroperController alloc] initWithOriginalImage:image completion:^(SPImageCroperController *viewController, UIImage *cropedImage) {
     [weakSelf.imageHolderBtn setTitle:@"" forState:UIControlStateNormal];
     [weakSelf.imageHolderBtn setBackgroundImage:cropedImage forState:UIControlStateNormal];
-        NSLog(@"call completionBlock");
+        NSLog(@"invoke completionBlock");
     } cancelBlock:^(SPImageCroperController *viewController) {
-        NSLog(@"call cancelBlock");
+        NSLog(@"invoke cancelBlock");
     }];
     [self presentViewController:vc animated:YES completion:nil];
     
