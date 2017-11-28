@@ -49,8 +49,6 @@ vc.delegate = self;
 ```
 - (void)imageCroperController:(SPImageCroperController *)viewController
         didFinishCropingImage:(UIImage *)image {
-    [self.imageHolderBtn setTitle:@"" forState:UIControlStateNormal];
-    [self.imageHolderBtn setBackgroundImage:image forState:UIControlStateNormal];
     NSLog(@"invoke -imageCroperController:didFinishCropingImage:");
 }
 
